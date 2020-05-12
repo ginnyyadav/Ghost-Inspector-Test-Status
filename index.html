@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>Tidepool Web Ghost Inspector Status</title>
+    <meta name="viewport" content="width = device-width, initial-scale = 1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+    <h2>Ghost Inspector Tidepool Web Status</h2>
+    <ul class="collapsible">
+      <li>
+        <div class="collapsible-header">
+          <span>User Login Suite</span>
+          <span style="padding-left: 50px;">
+          <a class= "hoverable" href="https://app.ghostinspector.com/tests/5dd442c4f7f9965b8a27620f">
+          <img src="https://api.ghostinspector.com/v1/suites/5dd2c12461dd6e0968b5f764/status-badge"></a>
+          </span>
+        </div>
+        <div class="collapsible-body">
+          <span>Existing User Login</span>
+          <span style="padding-left: 50px;">
+          <video width="640" height="360" src="https://ghostinspector-prod.s3.amazonaws.com/videos/5d186ca6-44c6-4606-8d8d-f959f384f921.mp4" controls>
+            Sorry, your browser doesn't support HTML5 <code>video</code>, but you can
+            download this video from the <a href="https://ghostinspector-prod.s3.amazonaws.com/videos/5d186ca6-44c6-4606-8d8d-f959f384f921.mp4" target="_blank">Internet Archive</a>.
+          </video>
+          </span>
+        </div>
+        <div class="collapsible-body">
+            <span>Existing Clinician Login</span>
+          </div>
+      </li>
+      <li>
+        <div class="collapsible-header">
+            <span>User Creation Suite</span>
+            <img style= "padding-left: 25px;" src="https://api.ghostinspector.com/v1/suites/5dd2c15561dd6e0968b5f8c4/status-badge"></img>
+          </div>
+        <div class="collapsible-body">
+            <span>Create Clinician Account</span>
+            <span style="padding-left: 50px;">
+            <video width="640" height="360" src="https://ghostinspector-prod.s3.amazonaws.com/videos/fa1b942a-dd15-41d7-89fe-8fa637b5351e.mp4" controls>
+              Sorry, your browser doesn't support HTML5 <code>video</code>, but you can
+              download this video from the <a href="https://ghostinspector-prod.s3.amazonaws.com/videos/fa1b942a-dd15-41d7-89fe-8fa637b5351e.mp4" target="_blank">Internet Archive</a>.
+            </video>
+            </span>
+        </div>
+      </li>
+      <li>
+        <div class="collapsible-header">
+          <i class="material-icons">whatshot</i>Third
+        </div>
+        <div class="collapsible-body">
+          <span>Lorem ipsum dolor sit amet.</span>
+        </div>
+      </li>
+    </ul>
+    </div>
+  </body>
+
+  <script
+    type="text/javascript"
+    src="https://code.jquery.com/jquery-2.1.1.min.js"
+  ></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var elems = document.querySelectorAll(".collapsible");
+      var instances = M.Collapsible.init(elems, options);
+    });
+  </script>
+</html>
