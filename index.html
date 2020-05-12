@@ -15,14 +15,38 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
     />
   </head>
-
+  <nav>
+    <div class="nav-wrapper white">
+      <a href="https://www.tidepool.org/" class="brand-logo" ><img src="https://www.tidepool.org/static/media/logo.f3ce0c6f.svg"/></a>
+      <ul class="right hide-on-med-and-down">
+        <!-- Dropdown Trigger -->
+        <li>
+          <a
+            class="dropdown-trigger black-text"
+            href="#!"
+            data-activates="dropdown1"
+            >Suites<i class="material-icons right">arrow_drop_down</i></a
+          >
+        </li>
+      </ul>
+    </div>
+  </nav>
   <body>
+      <!-- For the Dropdown Nav-->
+    <ul id="dropdown1" class="dropdown-content">
+      <li><a href="#userLoginSuite">Login Suite</a></li>
+      <li><a href="#!">User Creation Suite</a></li>
+      <li class="divider"></li>
+      <li><a href="#!">three</a></li>
+    </ul>
     <div class="container">
-      <h2>Ghost Inspector Tidepool Web Status</h2>
+        <h2 style="margin: 5%;">Ghost Inspector Tidepool Web Status</h2>
+    </div>
+    <div class="container">
       <ul class="collapsible">
         <li>
           <div class="collapsible-header row">
-            <span class="col s6">User Login Suite</span>
+            <span id="userLoginSuite" class="col s6">User Login Suite</span>
             <span class="col s6 right-align">
               <a
                 class="hoverable"
@@ -112,6 +136,17 @@
     document.addEventListener("DOMContentLoaded", function () {
       var elems = document.querySelectorAll(".collapsible");
       var instances = M.Collapsible.init(elems, options);
+    });
+  </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var elems = document.querySelectorAll(".dropdown-trigger");
+      var instances = M.Dropdown.init(elems, options);
+    });
+  </script>
+  <script>
+    $(document).ready(function () {
+      $(".dropdown-trigger").dropdown();
     });
   </script>
 </html>
