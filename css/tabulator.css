@@ -239,7 +239,7 @@
   position: relative;
   width: 100%;
   white-space: nowrap;
-  overflow: auto;
+  overflow: hidden;
   -webkit-overflow-scrolling: touch;
 }
 
@@ -432,6 +432,8 @@
   min-height: 22px;
   background-color: #fff;
   border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  border-top: 1px solid rgba(0, 0, 0, 0.12);
+  border-left: 1px solid rgba(0, 0, 0, 0);
 }
 
 .tabulator-row.tabulator-row-even {
