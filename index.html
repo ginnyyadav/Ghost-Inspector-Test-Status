@@ -3,36 +3,46 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta http-equiv="refresh" content="300"/>
+    <meta http-equiv="refresh" content="300" />
     <title>Tidepool Web Ghost Inspector Status</title>
     <meta name="viewport" content="width = device-width, initial-scale = 1" />
     <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+      rel="stylesheet" href="css/materialize.css"
     />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
     />
+    <link href="css/tabulator.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script>
+    <script src="js/initial.js"></script>
+<script type="text/javascript" src="js/tabulator.js"></script>
   </head>
-  <nav>
-    <div class="nav-wrapper white">
-      <a href="https://www.tidepool.org/" class="brand-logo" ><img src="https://www.tidepool.org/static/media/logo.f3ce0c6f.svg" alt="Logo link to Tidepool Website"/></a>
-      <ul class="right hide-on-med-and-down">
-        <!-- Dropdown Trigger -->
-        <li>
-          <a
-            class="dropdown-trigger black-text"
-            href="#!"
-            data-activates="dropdown1"
-            >Suites<i class="material-icons right">arrow_drop_down</i></a
-          >
-        </li>
-      </ul>
-    </div>
-  </nav>
+  <header>
+    <nav>
+      <div class="nav-wrapper white">
+        <a href="https://www.tidepool.org/" class="brand-logo"
+          ><img
+            src="https://www.tidepool.org/static/media/logo.f3ce0c6f.svg"
+            alt="Logo link to Tidepool Website"
+        /></a>
+        <ul class="right hide-on-med-and-down">
+          <!-- Dropdown Trigger -->
+          <li>
+            <a
+              class="dropdown-trigger black-text"
+              href="#!"
+              data-activates="dropdown1"
+              >Suites<i class="material-icons right">arrow_drop_down</i></a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
   <body>
-      <!-- For the Dropdown Nav-->
+    <!-- For the Dropdown Nav-->
     <ul id="dropdown1" class="dropdown-content">
       <li><a href="#userLoginSuite">Login Suite</a></li>
       <li><a href="#!">User Creation Suite</a></li>
@@ -40,7 +50,7 @@
       <li><a href="#!">three</a></li>
     </ul>
     <div class="container">
-        <h2 style="margin: 5%;">Ghost Inspector Tidepool Web Status</h2>
+      <h2 style="margin: 5%;">Ghost Inspector Tidepool Web Status</h2>
     </div>
     <div class="container">
       <ul class="collapsible">
@@ -53,28 +63,20 @@
                 href="https://app.ghostinspector.com/tests/5dd442c4f7f9965b8a27620f"
               >
                 <img
-                  src="https://api.ghostinspector.com/v1/suites/5dd2c12461dd6e0968b5f764/status-badge" alt="Login Suite Status Badge"
+                  src="https://api.ghostinspector.com/v1/suites/5dd2c12461dd6e0968b5f764/status-badge"
+                  alt="Login Suite Status Badge"
               /></a>
             </span>
           </div>
-          <div class="collapsible-body row">
-            <span class="col s6">Existing User Login</span>
-            <div class="col s6">
-              <video
-                class="responsive-video align-right"
-                width="640"
-                height="360"
-                src="https://ghostinspector-prod.s3.amazonaws.com/videos/5d186ca6-44c6-4606-8d8d-f959f384f921.mp4"
-                controls
-              >
-                Sorry, your browser doesn't support HTML5 <code>video</code>,
-                but you can download this video from the
-                <a
-                  href="https://ghostinspector-prod.s3.amazonaws.com/videos/5d186ca6-44c6-4606-8d8d-f959f384f921.mp4"
-                  target="_blank"
-                  >Internet Archive</a
-                >.
-              </video>
+          <div class="collapsible-body " style="position: relative; word-break: break-all;">
+            <div> Suite Status
+                 
+            </div>
+            <div id="dataTableOne">
+            </div>
+            <div id="dataTableTwo">
+            </div>
+            <div id="dataTableThree">
             </div>
           </div>
           <div class="collapsible-body row">
@@ -90,7 +92,8 @@
                 href="https://app.ghostinspector.com/suites/5dd2c15561dd6e0968b5f8c4"
               >
                 <img
-                  src="https://api.ghostinspector.com/v1/suites/5dd2c15561dd6e0968b5f8c4/status-badge" alt="User Creation Suite Status Badge"
+                  src="https://api.ghostinspector.com/v1/suites/5dd2c15561dd6e0968b5f8c4/status-badge"
+                  alt="User Creation Suite Status Badge"
               /></a>
             </span>
           </div>
@@ -126,27 +129,4 @@
       </ul>
     </div>
   </body>
-
-  <script
-    type="text/javascript"
-    src="https://code.jquery.com/jquery-2.1.1.min.js"
-  ></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script>
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      var elems = document.querySelectorAll(".collapsible");
-      var instances = M.Collapsible.init(elems, options);
-    });
-  </script>
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      var elems = document.querySelectorAll(".dropdown-trigger");
-      var instances = M.Dropdown.init(elems, options);
-    });
-  </script>
-  <script>
-    $(document).ready(function () {
-      $(".dropdown-trigger").dropdown();
-    });
-  </script>
 </html>
