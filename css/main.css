@@ -1,4 +1,42 @@
-.hover:hover{
-opacity:85%;
-
+.hover:hover {
+  background-color: #1b263b;
+}
+.navbar-dark {
+  background-color: #1b263b;
+}
+.content,
+html {
+  background-color: #0d1b2a;
+}
+.card {
+  background-color: #0d1b2a;
+  border-color: rgb(62, 124, 177, 0.1);
+  -webkit-box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.4);
+  box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.4);
+}
+.card-header {
+  background-color: #1b263b;
+  color: white;
+  border-color: rgb(62, 124, 177, 0.1);
+}
+.card-body {
+  color: white;
+}
+.list-group-item {
+  background-color: #0d1b2a;
+  color: white;
+  border-color: rgb(62, 124, 177, 0.1);
+}
+.badge-success {
+  background-color: #4da167;
+}
+.badge-danger {
+  background-color: #cc2936;
+}
+.badge-warning {
+  background-color: #fa8334;
+}
+a {
+  color: #3e7cb1;
 }
