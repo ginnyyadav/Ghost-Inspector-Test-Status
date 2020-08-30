@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="refresh" content="30"/>
+    <meta http-equiv="refresh" content="30" />
 
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
@@ -35,10 +35,10 @@
         </div>
     </nav>
     <div class="container-fluid content">
-        <div class="row row-cols-1 row-cols-lg-2">
-            <div class="col-12 col-lg-6 mt-3">
-                <div class="card">
-                    <h3 class="card-header text-center">Environment Status</h3>
+        <div class="row row-content mt-5">
+            <div class="col-12">
+                <div class="card p-3">
+                    <h3 class="card-header text-center">Environments</h3>
                     <div class="card-body">
                         <div class="row">
                             <div class="col-6 mx-auto d-none d-lg-block">
@@ -95,9 +95,11 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-lg-6 mt-3">
-                <div class="card h-100">
-                    <h3 class="card-header text-center">WEB UI Testing Status</h3>
+        </div>
+        <div class="row row-content">
+            <div class="col-12 col-lg-4 mt-3 mx-auto">
+                <div class="card p-3">
+                    <h3 class="card-header text-center">WEB UI Testing</h3>
                     <div class="card-body">
                         <div class="row">
                             <div class="col-12">
@@ -106,10 +108,15 @@
                                 </div>
                                 <div>
                                     <ul class="list-group">
-                                        <li class="list-group-item hover">QA1 <span class="badge float-right"><img src="https://api.ghostinspector.com/v1/tests/5f0498affe92d8691970783f/status-badge"></span></li>
-                                        <li class="list-group-item hover">QA2 <span class="badge float-right"><img src="https://api.ghostinspector.com/v1/tests/5f09046cfe92d86919928a8e/status-badge"></span></li>
-                                        <li class="list-group-item hover">DEV</li>
-                                        <li class="list-group-item hover">INT <span class="badge float-right"><img src="https://api.ghostinspector.com/v1/tests/5f09053ffe92d86919928b8c/status-badge"></span></li>
+                                        <li class="list-group-item hover">QA1 <span class="badge float-right"><img
+                                                    src="https://api.ghostinspector.com/v1/tests/5f0498affe92d8691970783f/status-badge"></span>
+                                        </li>
+                                        <li class="list-group-item hover">QA2 <span class="badge float-right"><img
+                                                    src="https://api.ghostinspector.com/v1/tests/5f09046cfe92d86919928a8e/status-badge"></span>
+                                        </li>
+                                        <li class="list-group-item hover">PRD <span class="badge float-right"><img
+                                                    src="https://api.ghostinspector.com/v1/tests/5f09053ffe92d86919928b8c/status-badge"></span>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
@@ -117,17 +124,21 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-12 col-lg-6 mt-3">
-                <div class="card h-100">
+            <div class="col-12 col-lg-4 mt-3 mx-auto">
+                <div class="card p-3 h-100">
                     <h3 class="card-header text-center"> Loop </h3>
                     <div class="card-body">
                         <div class="row">
                             <div class="col-12">
                                 <ul class="list-group">
-                                    <li class="list-group-item hover"><a class="stretched-link text-decoration-none" href="https://circleci.com/gh/tidepool-org/LoopWorkspace/tree/dev">Loop Workspace (DEV)</a><span class="badge float-right"><img src="https://circleci.com/gh/tidepool-org/LoopWorkspace/tree/dev.svg?style=svg"></span></li>
-                                    <li class="list-group-item hover"><a class="stretched-link text-decoration-none" href="https://circleci.com/gh/tidepool-org/LoopWorkspace/tree/jhbate%2Fci-cron-tests">Loop Nightly Build</a> <span class="badge float-right"><img src="https://circleci.com/gh/tidepool-org/LoopWorkspace/tree/jhbate%2Fci-cron-tests.svg?style=svg"></span></li>
+                                    <li class="list-group-item hover"><a class="stretched-link text-decoration-none"
+                                            href="https://circleci.com/gh/tidepool-org/LoopWorkspace/tree/dev">Loop
+                                            (DEV) Builds</a>
+                                    </li>
+                                    <li class="list-group-item hover"><a class="stretched-link text-decoration-none"
+                                            href="https://circleci.com/gh/tidepool-org/LoopWorkspace/tree/jhbate%2Fci-cron-tests">Loop
+                                            Nightly Builds</a>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -136,14 +147,18 @@
                 </div>
 
             </div>
-            <div class="col-12 col-lg-6 mt-3">
-                <div class="card h-100">
+            <div class="col-12 col-lg-4 mt-3 mx-auto">
+                <div class="card p-3 h-100">
                     <h3 class="card-header text-center"> API Tests </h3>
                     <div class="card-body">
                         <div class="row">
                             <div class="col-12">
                                 <ul class="list-group">
-                                    <li class="list-group-item hover"><a class="stretched-link text-decoration-none" href="https://travis-ci.com/tidepool-org/APITests">API Tests</a><span class="badge float-right"><img src="https://travis-ci.com/tidepool-org/APITests.svg?branch=master"></span></li>
+                                    <li class="list-group-item hover"><a class="stretched-link text-decoration-none"
+                                            href="https://travis-ci.com/tidepool-org/APITests">API Tests</a><span
+                                            class="badge float-right"><img
+                                                src="https://travis-ci.com/tidepool-org/APITests.svg?branch=master"></span>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -152,9 +167,14 @@
                 </div>
 
             </div>
-
         </div>
     </div>
+    </div>
+    <footer class="footer">
+        <div class="container text-center">
+          <span class="text-muted">Made for Tidepool Engineering with &hearts; by Ginny Yadav</span>
+        </div>
+      </footer>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
@@ -164,7 +184,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
-        <script src="https://hdfh1x65plxr.statuspage.io/embed/script.js"></script>
+    <script src="https://hdfh1x65plxr.statuspage.io/embed/script.js"></script>
 </body>
 
 </html>
