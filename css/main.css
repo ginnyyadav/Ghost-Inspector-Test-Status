@@ -5,7 +5,7 @@
   background-color: #1b263b;
 }
 .content,
-html {
+html, body {
   background-color: #0d1b2a;
 }
 .card {
@@ -39,4 +39,37 @@ html {
 }
 a {
   color: #3e7cb1;
+}
+.jumbotron{
+  background-color: #0d1b2a;
+  color: white;
+  margin-top: 3%;
+}
+.carouselImage {
+  width: 100%;
+
+}
+.aboutRow{
+margin-top: 6%;
+}
+.btn{
+  background-color: #1b263b;
+  border-color: rgb(62, 124, 177, 0.1); 
+}
+.btn:hover{
+  background-color: #1b263b;
+  border-color: white;
+}
+
+@media screen and (max-width:991px){
+  .jumbotron{
+    margin-top: 0%;
+  }
+  .aboutRow{
+    margin-top: 0%;
+  }
+  .carouselImage {
+    width: 50%;
+  
+  }
 }
